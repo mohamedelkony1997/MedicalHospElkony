@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hosp">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProtoType_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashHosp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

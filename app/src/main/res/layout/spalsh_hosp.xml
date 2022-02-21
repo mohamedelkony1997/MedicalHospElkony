@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashHosp"
+
+    >
+    <ImageView
+app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_3"
+        android:id="@+id/image1"/>
+
+
+
+<ImageView
+    android:id="@+id/medical_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/_160sdp"
+
+    android:src="@drawable/headphone_medical"
+    />
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medical_logo"
+
+        android:id="@+id/hosp_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Hosiptal System"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/hblue"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+    <Button
+android:id="@+id/start"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Get Started"
+
+        android:background="@drawable/rectangle_bootom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosp_text"
+
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textColor="@color/hwhite"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="false"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

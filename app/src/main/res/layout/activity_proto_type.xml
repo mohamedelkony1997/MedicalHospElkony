@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProtoType_Activity">
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_3"
+        android:id="@+id/image1"/>
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/hosp_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Prototype Map"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/hblue"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_180sdp"
+        />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+
+>
+        <Button
+            android:layout_width="@dimen/_73sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="Doctor"
+            android:fontFamily="@font/poppins_light"
+            />
+        <Button
+            android:layout_width="@dimen/_113sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="Receptionist"
+            android:fontFamily="@font/poppins_light"
+            />
+        <Button
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="Nurse"
+            android:fontFamily="@font/poppins_light"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/linear1"
+       android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+
+        >
+        <Button
+            android:layout_width="@dimen/_153sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="Analysis Employee"
+            android:fontFamily="@font/poppins_light"
+            />
+        <Button
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="Manger"
+            android:fontFamily="@font/poppins_light"
+            />
+        <Button
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/round"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/hblue"
+            android:textAllCaps="false"
+            android:text="HR"
+            android:fontFamily="@font/poppins_light"
+            />
+
+    </LinearLayout>
+    <ImageView
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rectangle_2"
+        android:id="@+id/image2"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
