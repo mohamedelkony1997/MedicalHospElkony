@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/hwhite">
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_3"
+        android:id="@+id/image1"/>
+
+
+
+    <ImageView
+        android:id="@+id/medical_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_60sdp"
+
+        android:src="@drawable/headphone_medical"
+
+        />
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medical_logo"
+        android:id="@+id/hosp_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/hblue"
+        android:fontFamily="@font/poppins_medium"
+
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosp_text"
+        android:id="@+id/login_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/to_continue_login_now"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/hgray"
+        android:fontFamily="@font/poppins_regular"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rectangle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/phone_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text"
+        android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_30sdp"
+        android:hint="@string/phone_number"
+        app:counterEnabled="true"
+        app:counterMaxLength="12"
+        app:startIconDrawable="@drawable/phone_call"
+        app:startIconTint="@color/hblue"
+       app:endIconMode="clear_text"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+              android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/password_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_inputlayout"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_10sdp"
+
+
+   app:endIconMode="password_toggle"
+        android:hint="@string/password"
+        app:startIconDrawable="@drawable/lock_mark"
+        app:startIconTint="@color/hblue"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+           android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forgot_inputlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/password_inputlayout"
+        app:layout_constraintTop_toBottomOf="@+id/password_inputlayout"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/forget_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/_11ssp"
+            android:inputType="none"
+            android:background="@color/hwhite"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="@color/hblue"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_inputlayout"
+        android:onClick="login_btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasksDetails">
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tasks_details_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/tasks_details"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        />
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_details_text"
+        android:id="@+id/tasks_name_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/tasks_details"
+        android:textSize="@dimen/_15ssp"
+
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+
+        android:background="@drawable/round"
+        android:gravity="left"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintask"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tasks_name_text"
+      android:layout_marginStart="@dimen/_15sdp"
+      android:layout_marginEnd="@dimen/_15sdp"
+      android:layout_marginTop="@dimen/_15sdp"
+      app:layout_constraintEnd_toEndOf="parent"
+      >
+      <androidx.cardview.widget.CardView
+          android:id="@+id/Cardprofiletask_doctor_image"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_width="@dimen/_40sdp"
+          android:layout_height="@dimen/_40sdp"
+          app:cardCornerRadius="8dp"
+          android:elevation="10dp">
+          <ImageView
+              android:background="@color/white"
+              android:scaleType="fitXY"
+              android:id="@+id/profileytask_doctor_image"
+              android:layout_width="@dimen/_40sdp"
+              android:layout_height="@dimen/_40sdp"
+              android:layout_margin="@dimen/_5sdp"
+              android:layout_gravity="center"
+
+              android:src="@drawable/mohamed"
+              />
+
+
+      </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/texttask_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/Cardprofiletask_doctor_image"
+            app:layout_constraintTop_toTopOf="@+id/constraintask"
+            android:text="Ibahim Khaled"
+android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/poppins_semibold"
+            />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintStart_toEndOf="@+id/Cardprofiletask_doctor_image"
+           app:layout_constraintTop_toBottomOf="@+id/texttask_name"
+          android:text="Specialist - Manger"
+          android:layout_marginStart="@dimen/_8sdp"
+
+          android:textColor="@color/hblue"
+          />
+      <TextView
+          android:id="@+id/texttask_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="@+id/constraintask"
+          app:layout_constraintTop_toTopOf="@+id/constraintask"
+          android:text="13 Mar 2020"
+          android:layout_marginStart="@dimen/_8sdp"
+
+       android:textColor="@color/gray"
+          />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/texttask_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/constraintask"
+       app:layout_constraintTop_toBottomOf="@+id/constraintask"
+        android:text="Details note : Lorem Ipsum is simply dummy text of
+         printing and typesetting industry.Lorem Ipsum"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/poppins_semibold"
+
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardtask_image"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+
+        app:layout_constraintStart_toStartOf="@id/constraintask"
+        app:layout_constraintTop_toBottomOf="@+id/texttask_subject"
+      >
+
+        <ImageView
+            android:id="@+id/Details_task_image"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_133sdp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/mohamed"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/texttask_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/constraintask"
+        app:layout_constraintTop_toBottomOf="@+id/Cardtask_image"
+        android:text="To do"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_semibold"
+
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/groupradio"
+       app:layout_constraintStart_toStartOf="@+id/constraintask"
+        app:layout_constraintTop_toBottomOf="@+id/texttask_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radia_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:text="Lorem Ipsum is simply dummy text of"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/radia_id2"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Lorem Ipsum is simply dummy text of"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/radia_id3"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Lorem Ipsum is simply dummy text of"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/radia_id4"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:text="Lorem Ipsum is simply dummy text of"
+            android:textSize="@dimen/_12sdp" />
+
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/addnote_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintask"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio"
+        android:layout_height="wrap_content"
+        android:hint="Add Note"
+        android:elevation="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintask"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/round"
+        android:layout_marginTop="@dimen/_20sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addnote_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="left|top"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="@color/hblue"
+        android:fontFamily="@font/fonts"
+        android:text="Execution"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@+id/constraintask"
+        app:layout_constraintTop_toBottomOf="@+id/addnote_inputlayout"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

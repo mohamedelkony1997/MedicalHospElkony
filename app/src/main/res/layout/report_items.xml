@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginStart="12dp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/hwhite"
+    app:cardElevation="@dimen/_12sdp"
+    app:cardUseCompatPadding="false"
+
+   >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    >
+    <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:src="@drawable/reportsitem"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/reports_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="Report Name"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/imageprofile"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/status_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/finshed"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/statusreports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_8ssp"
+        android:text="Finished"
+
+        app:layout_constraintStart_toStartOf="@+id/status_image"
+        app:layout_constraintEnd_toEndOf="@+id/status_image"
+        app:layout_constraintBottom_toBottomOf="@+id/status_image"
+        app:layout_constraintTop_toTopOf="@+id/status_image"
+        android:textColor="@color/green"
+        />
+
+    <ImageView
+        android:id="@+id/imagetaskcalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calenderimage"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofile"
+
+        />
+    <TextView
+        android:id="@+id/datareport_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="24/12/2021"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/imagetaskcalender"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofile"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

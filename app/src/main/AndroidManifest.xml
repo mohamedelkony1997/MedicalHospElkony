@@ -10,6 +10,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hosp">
         <activity
+            android:name=".AttendenceAndLeaving"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationReceptionist"
+            android:exported="false" />
+        <activity
+            android:name=".ReportsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".CreateReports"
+            android:exported="false" />
+        <activity
+            android:name=".Reports"
+            android:exported="false" />
+        <activity
+            android:name=".TasksDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Tasks"
+            android:exported="false" />
+        <activity
+            android:name=".tasks"
+            android:exported="false" />
+        <activity
+            android:name=".CallDone"
+            android:exported="false" />
+        <activity
+            android:name=".Select_Doctor"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCall"
+            android:exported="false" />
+        <activity
+            android:name=".Calls"
+            android:exported="false" />
+        <activity
+            android:name=".Receptionist_homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Loading_Activity"
+            android:exported="false" />
+        <activity
             android:name=".ProtoType_Activity"
             android:exported="false" />
         <activity
