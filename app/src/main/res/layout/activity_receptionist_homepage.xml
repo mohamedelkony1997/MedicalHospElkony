@@ -14,22 +14,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:gravity="center"
+
         android:layout_marginTop="@dimen/_20sdp"
        android:layout_marginEnd="@dimen/_5sdp"
-        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
         >
 
 
         <androidx.cardview.widget.CardView
+            android:background="@color/hwhite"
             android:id="@+id/cardview_doctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:elevation="@dimen/_15sdp"
-            android:innerRadius="0dp"
-            android:shape="ring"
-            android:thicknessRatio="1.9"
-            app:cardCornerRadius="@dimen/_30sdp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp">
 
             <ImageView
                 android:id="@+id/profile_doctor_image"
@@ -38,6 +39,7 @@
                 android:layout_margin="@dimen/_5sdp"
                 android:scaleType="fitXY"
                 android:src="@drawable/mohamed"
+                android:layout_gravity="center"
 
 
                 />
@@ -53,13 +55,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
+
             >
 
             <TextView
                 android:id="@+id/doctorname_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+android:layout_marginStart="@dimen/_5sdp"
                 android:background="@color/white"
                 android:fontFamily="@font/poppins_semibold"
                 android:inputType="none"
@@ -91,6 +94,7 @@
             android:background="@color/white"
             android:fontFamily="@font/poppins_regular"
             android:inputType="none"
+               android:layout_marginStart="@dimen/_5sdp"
             android:text="Specialist , Receptionist"
             android:textColor="@color/hblue"
             android:textSize="@dimen/_9ssp"

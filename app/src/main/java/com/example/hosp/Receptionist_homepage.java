@@ -38,7 +38,7 @@ public class Receptionist_homepage extends AppCompatActivity {
     }
 
     public void onattendenceandleaving(View view) {
-        Intent intent2=new Intent(Receptionist_homepage.this, NotificationReceptionist.class);
+        Intent intent2=new Intent(Receptionist_homepage.this, AttendenceAndLeaving.class);
         startActivity(intent2);
     }
 }

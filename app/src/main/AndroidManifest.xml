@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hosp">
 
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hosp">
+        <activity
+            android:name=".ReceptionistLeavingFingerPrintA"
+            android:exported="false" />
+        <activity
+            android:name=".ReceptionistAttendanceFingerPrint"
+            android:exported="false" />
         <activity
             android:name=".AttendenceAndLeaving"
             android:exported="false" />
@@ -29,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".Tasks"
-            android:exported="false" />
-        <activity
-            android:name=".tasks"
             android:exported="false" />
         <activity
             android:name=".CallDone"

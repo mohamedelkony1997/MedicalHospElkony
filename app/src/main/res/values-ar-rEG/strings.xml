@@ -32,6 +32,7 @@
     <string name="create_report">Create_Report</string>
     <string name="report_details">Report Details</string>
     <string name="notification">Notification</string>
+    <string name="specialist_doctor">Specialist , Doctor</string>
 
 
 </resources>
