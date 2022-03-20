@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+
+
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardprofile_doctor_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp">
+    <ImageView
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:id="@+id/profile_doctor_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+  android:layout_gravity="center"
+
+    android:src="@drawable/mohamed"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_image"
+            android:layout_gravity="right|bottom"
+           />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="Dr. Ebrahim Khaled"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/Cardprofile_doctor_image"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <TextView
+        android:id="@+id/specializedoctors_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_11ssp"
+        android:text="Specialist - doctor"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/Cardprofile_doctor_image"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_name"
+        android:gravity="center"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manger.MainTasks">
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tasks_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/tasks"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/tasks_linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_text"
+        android:gravity="start"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/calender_inputlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tasks_text"
+            android:layout_weight=".65"
+            android:hint="@string/data"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tasks_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="text|date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/calendertasks_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/calender"
+            android:layout_weight=".12"
+            android:onClick="calender_click"
+            android:layout_marginEnd="@dimen/_5sdp"
+            />
+        <ImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/add"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_weight=".12"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:onClick="add_click"
+            />
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_linear"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent  "
+        tools:listitem="@layout/task_items"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

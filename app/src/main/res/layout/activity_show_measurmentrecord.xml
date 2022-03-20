@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.ShowMeasurmentrecord">
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/docorcases_details_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Case Details"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/lineardoctorscases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docorcases_details_text"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/casebtn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+
+            android:text="Case"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp" />
+
+        <Button
+            android:id="@+id/medicalbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Record"
+
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp"
+            style="?attr/materialButtonOutlinedStyle"
+
+            />
+        <Button
+            android:id="@+id/measurmentbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical measurment"
+
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="-.2"
+            />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainnurse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineardoctorscases"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Cardprofilefragment_Nurse_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp">
+            <ImageView
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:id="@+id/profile_nurse_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/mohamed"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textnurse_namefragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/Cardprofilefragment_Nurse_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Ibahim Khaled"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/poppins_semibold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Specialist -  Nurse"
+            android:textColor="@color/hblue"
+
+            app:layout_constraintStart_toEndOf="@+id/Cardprofilefragment_Nurse_image"
+            app:layout_constraintTop_toBottomOf="@+id/textnurse_namefragment" />
+
+        <TextView
+            android:id="@+id/textnursefragment_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="13 Mar 2020"
+            android:layout_marginStart="@dimen/_8sdp"
+
+            android:textColor="@color/gray"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textnurse_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/constrainnurse"
+        app:layout_constraintTop_toBottomOf="@+id/constrainnurse"
+        android:text="Details note : Lorem Ipsum is simply dummy text of
+        printing and typesetting industry.Lorem Ipsum"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/poppins_semibold"
+
+
+        />
+    <TextView
+        android:id="@+id/textnurse_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textnurse_subject"
+        app:layout_constraintTop_toBottomOf="@+id/textnurse_subject"
+        android:text="Medical Measurment"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:fontFamily="@font/poppins_semibold"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blood"
+        android:text="Bllod Pressure"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ellipse_598"
+        android:drawablePadding="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@+id/textnurse_record"
+        app:layout_constraintTop_toBottomOf="@+id/textnurse_record" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodnum"
+        android:text="120 - 129"
+        android:textColor="@color/black"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnurse_record" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sugar"
+        android:text="Sugar Analysis"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ellipse_598"
+        android:drawablePadding="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@+id/blood"
+        app:layout_constraintTop_toBottomOf="@+id/blood"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sugarnum"
+        android:text="120 - 129"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

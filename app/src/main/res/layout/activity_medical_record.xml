@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.MedicalRecord">
+    <TextView
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/docorcases_details_text"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Medical Record"
+    android:textSize="@dimen/_15ssp"
+    android:textColor="@color/black"
+    android:fontFamily="@font/poppins_medium"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:gravity="center"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicalrecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docorcases_details_text"
+        tools:listitem="@layout/medical_items" />
+
+    <Button
+        android:id="@+id/addmeasurment"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+
+        android:text="Add Measurment"
+        android:textAllCaps="false"
+        android:drawableEnd="@drawable/ic_baseline_add_242"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicalrecyclerview"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/addnote_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="@+id/addmeasurment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmeasurment"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:hint="Add Note"
+         android:background="@color/gray"
+        android:elevation="@dimen/_12sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addnote_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:gravity="left"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+android:onClick="onsendtofragment"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/hblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addnote_inputlayout"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+android:layout_marginTop="@dimen/_130sdp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

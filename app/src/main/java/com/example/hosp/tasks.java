@@ -39,7 +39,7 @@ TasksAdapter tasksAdapter;
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         // set day of month , month and year value in the edit text
-                        TextInputEditText data = findViewById(R.id.data_edittext);
+                        TextInputEditText data = findViewById(R.id.tasks_edittext);
 
                         String datastr=(dayOfMonth)+" " + "/" + (month + 1) +" " + "/" + (year) +" ";
                         data.setText(datastr);

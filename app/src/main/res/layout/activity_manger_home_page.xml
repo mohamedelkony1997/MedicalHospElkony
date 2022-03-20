@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manger.MangerHomePage">
+    <LinearLayout
+        android:id="@+id/doctor_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:background="@color/hwhite"
+            android:id="@+id/cardview_doctor"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/profile_doctor_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mohamed"
+                android:layout_gravity="center"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/doctorname_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:inputType="none"
+                    android:text="Mohamed   Elkony"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/notification_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="notificationteceptionist"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/notification"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/specialtype_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="none"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Specialist , Manger"
+                android:textColor="@color/hblue"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearbluebackground"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_163sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/___container_l_blue__1_"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/green_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_linear">
+
+        <ImageButton
+
+            android:id="@+id/calls"
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_66sdp"
+            android:background="@drawable/casesrecep"
+
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="oncases"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_inputlayout"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cases"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/green_background"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_130sdp"
+        app:layout_constraintStart_toEndOf="@+id/linearbluebackground"
+        android:background="@drawable/___container_l_green_3_"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageButton
+
+            android:id="@+id/tasks"
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_66sdp"
+            android:background="@drawable/checkbox"
+
+            android:fontFamily="@font/poppins_medium"
+
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:onClick="ontasks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_inputlayout"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/tasks"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/darkblue_background"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_135sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/linearbluebackground"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/___container_l_adarkblue__2_"
+        app:layout_constraintEnd_toStartOf="@+id/skyline_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageButton
+
+            android:id="@+id/reports"
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_66sdp"
+            android:background="@drawable/reports"
+            android:onClick="onreports"
+            android:fontFamily="@font/poppins_medium"
+
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_inputlayout"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/reports"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/skyline_background"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_165sdp"
+        app:layout_constraintStart_toEndOf="@+id/darkblue_background"
+        app:layout_constraintTop_toBottomOf="@+id/green_background"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/___container_l_skyline__4_"
+
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageButton
+
+            android:id="@+id/attedence"
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_66sdp"
+            android:background="@drawable/attendence"
+
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="onattendenceandleaving"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_inputlayout"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/attendance_leaving"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/brown_background"
+        android:layout_width="@dimen/_285sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/skyline_background"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/___container_l_color__5_"
+
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Employee"
+            android:textColor="@color/white"
+            android:layout_marginEnd="@dimen/_90sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageButton
+
+            android:id="@+id/cases"
+            android:layout_width="@dimen/_66sdp"
+            android:layout_height="@dimen/_66sdp"
+            android:background="@drawable/people"
+
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="onemployee"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_5sdp"
+
+
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginStart="12dp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/hwhite"
+    app:cardElevation="@dimen/_12sdp"
+    app:cardUseCompatPadding="false"
+
+   >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/doctorscallconstrain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    >
+    <ImageView
+        android:id="@+id/imageprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:src="@drawable/userprofile"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/analysisrequests_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="Ebrahim Khaled"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/imageprofile"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/headimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headfone"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageprofile"
+
+        />
+    <TextView
+        android:id="@+id/doctoranalysisrequests_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="Dr.Salama Ali"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/headimage"
+        app:layout_constraintTop_toBottomOf="@+id/analysisrequests_name"
+        />
+
+    <ImageView
+        android:id="@+id/imagecalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calenderimage"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headimage"
+
+        />
+    <TextView
+        android:id="@+id/datacalls_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:text="24/12/2021"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/imagecalender"
+        app:layout_constraintTop_toBottomOf="@+id/doctoranalysisrequests_name"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+ app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datacalls_text"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+
+
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/acceptbtn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:backgroundTint="@color/green2"
+           app:icon="@drawable/ic_baseline_check_circle_outline_24"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/busy"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="Busy"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/brown"
+            app:icon="@drawable/busy"
+            app:iconPadding="-20dp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

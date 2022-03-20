@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_12sdp"
+    android:layout_margin="@dimen/_10sdp"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constrian"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/bootomlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/medicalrecord"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Medical Records"
+
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/hblue"
+            app:icon="@drawable/fi_rr_treatment"
+            app:iconGravity="top"
+            app:iconTint="@color/hblue"
+            app:strokeColor="@color/hblue"
+            app:strokeWidth="@dimen/_2sdp"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/medicalmeasurment"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="Medical Measurment"
+
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/hblue"
+            app:icon="@drawable/fi_rr_dashboard"
+            app:iconGravity="top"
+            app:iconTint="@color/hblue"
+            app:strokeColor="@color/hblue"
+            app:strokeWidth="@dimen/_2sdp" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/requestdoctor"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Request"
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/hblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/bootomlinear"
+        android:layout_marginTop="@dimen/_20sdp"
+
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>v
+</androidx.cardview.widget.CardView>

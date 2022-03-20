@@ -16,6 +16,72 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hosp">
         <activity
+            android:name=".hr.AddEmployee"
+            android:exported="false" />
+        <activity
+            android:name=".hr.Employee"
+            android:exported="false" />
+        <activity
+            android:name=".hr.HrHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".manger.AddTaskManger"
+            android:exported="false" />
+        <activity
+            android:name=".manger.MaintasksDetails"
+            android:exported="false" />
+        <activity
+            android:name=".manger.MainTasks"
+            android:exported="false" />
+        <activity
+            android:name=".manger.CasesDetialsMAnger"
+            android:exported="false" />
+        <activity
+            android:name=".manger.CasesManger"
+            android:exported="false" />
+        <activity
+            android:name=".manger.MangerHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".analysis.AddRecord"
+            android:exported="false" />
+        <activity
+            android:name=".analysis.RequestsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".analysis.Requests"
+            android:exported="false" />
+        <activity
+            android:name=".analysis.AnalysisEmployeeHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.Cases"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.ShowMeasurmentrecord"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.ShowMedicalRecord"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.MedicalMeasurment"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.MedicalRecord"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.SelectNurse"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.CaseDetials"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.CallsDoctors"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.DoctorHomePage"
+            android:exported="false" />
+        <activity
             android:name=".ReceptionistLeavingFingerPrintA"
             android:exported="false" />
         <activity

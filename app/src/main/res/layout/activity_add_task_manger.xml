@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manger.AddTaskManger">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/create_calls_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="CreateTasks"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/patient_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_calls_text"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Task Name"
+        android:elevation="@dimen/_12sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/patient_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/selectdocror_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_inputlayout"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Select Doctor"
+        android:elevation="@dimen/_12sdp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/selectdoctor_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/description_inputlayout"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectdocror_inputlayout"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Description"
+
+        android:elevation="@dimen/_12sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="left"
+
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+<TextView
+    android:id="@+id/todo1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="@dimen/_20sdp"
+    app:layout_constraintTop_toBottomOf="@+id/description_inputlayout"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_10ssp"
+    android:text="To do"
+    android:layout_marginTop="@dimen/_5sdp"
+    />
+    <TextView
+        android:id="@+id/addtodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/addbtn"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/description_inputlayout"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:text="Add"
+
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo1"
+        tools:listitem="@layout/itemmangeradd"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageupload"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addrecyclerview"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:scaleType="centerInside"
+        android:background="@color/hwhite"
+        android:src="@drawable/upload"
+        android:foregroundGravity="top"
+        android:paddingTop="@dimen/_10sdp"
+
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadimage"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/hwhite"
+        android:text="Upload Image"
+        android:onClick="uploadimagefromgallery"
+        android:textAllCaps="false"
+        android:textColor="@color/hblue"
+        android:textSize="@dimen/_13ssp"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/hblue"
+        app:strokeColor="@color/hblue"
+        app:layout_constraintBottom_toBottomOf="@+id/imageupload"
+        app:layout_constraintStart_toStartOf="@+id/imageupload"
+        app:layout_constraintEnd_toEndOf="@+id/imageupload"
+
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="@color/hblue"
+        android:fontFamily="@font/fonts"
+        android:onClick="onsendtask"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/uploadimage"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

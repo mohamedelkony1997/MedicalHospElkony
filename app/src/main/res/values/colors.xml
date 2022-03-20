@@ -14,7 +14,13 @@
     <color name="hdarkgray">#404040</color>
     <color name="hdarkblue">#2FBEB0</color>
     <color name="red">#F62516</color>
+    <color name="bred">#E63A3A</color>
     <color name="green">#4BD651</color>
     <color name="gray">#EDE9E9</color>
     <color name="hred">#F8D5D5</color>
+    <color name="brown">#EC9511</color>
+    <color name="gray2">#CFCCCC</color>
+
+    <color name="green2">#1AD672</color>
+
 </resources>

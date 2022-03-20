@@ -18,6 +18,7 @@
         android:fontFamily="@font/poppins_medium"
         android:layout_marginTop="@dimen/_15sdp"
         android:gravity="center"
+
         />
     <TextView
         app:layout_constraintStart_toStartOf="parent"

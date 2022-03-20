@@ -6,6 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.hosp.analysis.AnalysisEmployeeHomePage;
+import com.example.hosp.analysis.RequestsDetails;
+import com.example.hosp.doctor.DoctorHomePage;
+import com.example.hosp.hr.Employee;
+import com.example.hosp.manger.CasesDetialsMAnger;
+import com.example.hosp.manger.CasesManger;
+import com.example.hosp.manger.MainTasks;
+import com.example.hosp.manger.MaintasksDetails;
+import com.example.hosp.manger.MangerHomePage;
+
 public class Login extends AppCompatActivity {
 
     @Override
@@ -15,7 +25,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void login_btn(View view) {
-        Intent intent=new Intent(Login.this, Receptionist_homepage.class);
+        Intent intent=new Intent(Login.this, Employee.class);
         startActivity(intent);
     }
 }
