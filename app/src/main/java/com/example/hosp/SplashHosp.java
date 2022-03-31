@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.example.hosp.hr.AddEmployee;
+
 public class SplashHosp extends AppCompatActivity {
 Button getstarted;
     @Override
@@ -19,7 +21,7 @@ Button getstarted;
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SplashHosp.this,ProtoType_Activity.class);
+                Intent intent=new Intent(SplashHosp.this, Loading_Activity.class);
                 startActivity(intent);
 
             }

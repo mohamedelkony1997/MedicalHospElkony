@@ -55,10 +55,10 @@
                     android:id="@+id/calender_btn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/calender"
                     android:layout_weight=".12"
-                    android:onClick="calender_click"
-                    />
+                    android:background="@drawable/calender"
+                    android:onClick="calender_click" />
+
                 <ImageButton
                     android:id="@+id/add_btn"
                     android:layout_width="0dp"

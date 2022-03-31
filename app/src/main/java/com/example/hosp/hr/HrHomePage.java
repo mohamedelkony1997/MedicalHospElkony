@@ -22,6 +22,8 @@ public class HrHomePage extends AppCompatActivity {
     }
 
     public void onemployeehr(View view) {
+        Intent intent2=new Intent(HrHomePage.this, Employee.class);
+        startActivity(intent2);
     }
     public void ontasks(View view) {
         Intent intent2=new Intent(HrHomePage.this, Tasks.class);

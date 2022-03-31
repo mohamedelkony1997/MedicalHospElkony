@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hr.Profile"
+    android:background="@color/hdarkblue">
+    <TextView
+        android:id="@+id/select_doctor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="My Profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardprofile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".65"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/select_doctor_text"
+        app:layout_constraintVertical_bias="0.489">
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Ebrahim Khaled"
+            android:textColor="@color/hblue"
+            android:textSize="@dimen/_15ssp"
+
+
+            />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_80sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_10sdp"
+    >
+
+    <TextView
+        android:id="@+id/profilespecialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Specislist - Doctor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/_10sdp"
+android:drawableStart="@drawable/specialistprofile"
+
+        />
+    <TextView
+        android:id="@+id/profilegender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Male"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/genferprofile"
+
+        />
+    <TextView
+        android:id="@+id/profiledataofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="1-9-1997"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/dataofbirth"
+
+        />
+
+    <TextView
+        android:id="@+id/profileaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/address"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Etay Elbroud"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+
+        />
+    <TextView
+        android:id="@+id/profilestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/emailprofile"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="mohamedelkony@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+
+        />
+    <TextView
+        android:id="@+id/profilephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="01022930508"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+
+
+        />
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_doctor_text"
+        app:layout_constraintBottom_toTopOf="@+id/cardprofile"
+       app:layout_constraintTop_toTopOf="@id/cardprofile"
+      app:cardCornerRadius="@dimen/_50sdp"
+
+        >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/mohamed"
+        android:layout_gravity="center"
+ app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="@color/hblue"
+        />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardprofile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/cardprofile"
+        android:layout_marginTop="@dimen/_80sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+
+        >
+    <ImageView
+
+        android:src="@drawable/ellipse607"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pencil"
+            android:layout_gravity="center"
+            android:onClick="onadduser"
+            />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
