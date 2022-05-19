@@ -110,6 +110,7 @@ public class LoginData{
 	}
 
 	public String getType(){
+
 		return type;
 	}
 

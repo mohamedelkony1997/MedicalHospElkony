@@ -3,6 +3,7 @@ package com.example.hosp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -38,6 +39,7 @@ import retrofit2.Response;
 public class Login extends AppCompatActivity {
 TextInputEditText email,password;
     String emailstr,passwordstr;
+    String type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,69 +52,30 @@ TextInputEditText email,password;
     public void login_btn(View view) {
             login();
     }
-    void  login(){
-        emailstr=email.getText().toString();
-        passwordstr=password.getText().toString();
+    void  login() {
+        emailstr = email.getText().toString();
+        passwordstr = password.getText().toString();
 
-        LoginRequest loginRequest=new LoginRequest(emailstr,passwordstr,"sdfsfsdfsdfsdfsfs");
-        RetorfitClient.getClient().login(loginRequest).enqueue(new Callback<LoginResponse>() {
-            @Override
-            public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-                String type = response.body().getLoginData().getType();
-                if (type.equals("doctor")) {
+            LoginRequest loginRequest = new LoginRequest(emailstr, passwordstr, "sdfsfsdfsdfsdfsfs");
+            RetorfitClient.getClient().login(loginRequest).enqueue(new Callback<LoginResponse>() {
+                @Override
+                public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                     if (response.isSuccessful()) {
                         handlesucessresponse(response);
-                        Intent intent = new Intent(Login.this, DoctorHomePage.class);
-                        startActivity(intent);
-
                     } else {
                         handleerrorresponse(response);
 
                     }
-                } else if (type.equals("hr")) {
-                    if (response.isSuccessful()) {
-                        handlesucessresponse(response);
-                        Intent intent = new Intent(Login.this, HrHomePage.class);
-                        startActivity(intent);
 
-                    } else {
-                        handleerrorresponse(response);
-
-                    }
-                } else if (type.equals("receptionist")) {
-                    if (response.isSuccessful()) {
-                        handlesucessresponse(response);
-                        Intent intent = new Intent(Login.this, Receptionist_homepage.class);
-                        startActivity(intent);
-
-                    } else {
-                        handleerrorresponse(response);
-                    }
-                }else if (type.equals("Analysis")) {
-                    if (response.isSuccessful()) {
-                        handlesucessresponse(response);
-                        Intent intent = new Intent(Login.this, AnalysisEmployeeHomePage.class);
-                        startActivity(intent);
-
-                    } else {
-                        handleerrorresponse(response);
-                    }
-                }else if (type.equals("manger")) {
-                    if (response.isSuccessful()) {
-                        handlesucessresponse(response);
-                        Intent intent = new Intent(Login.this, MangerHomePage.class);
-                        startActivity(intent);
-
-                    } else {
-                        handleerrorresponse(response);
-                    }
                 }
-            }
-            public void onFailure(Call<LoginResponse> call, Throwable t) {
-                Toast.makeText(Login.this, t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-            }
-        });
-    }
+
+
+                public void onFailure(Call<LoginResponse> call, Throwable t) {
+                    Toast.makeText(Login.this, t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                }
+            });
+        }
+
 
     private void handleerrorresponse(Response<LoginResponse> response) {
         try {
@@ -131,11 +94,65 @@ TextInputEditText email,password;
     private void handlesucessresponse(Response<LoginResponse> response) {
         if ( response.body().issucess()){
             Toast.makeText(this, "it is exists", Toast.LENGTH_SHORT).show();
+            type = response.body().getLoginData().getType();
+
+            if (type.equals("doctor")) {
+                String doctorFirstname = response.body().getLoginData().getFirstName();
+                String doctorLastname = response.body().getLoginData().getLastName();
+                String specialistdoctor = response.body().getLoginData().getSpecialist();
+
+                SharedPreferences sharedPreferences = getSharedPreferences("DOCTORPREFS", MODE_PRIVATE);
+
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("DRhomepagefirst", doctorFirstname);
+                editor.putString("DRhomepagelast", doctorLastname);
+                editor.putString("DRhomepagespecilaist", specialistdoctor);
+                editor.commit();
+                editor.apply();
+                Intent intent = new Intent(Login.this, DoctorHomePage.class);
+                startActivity(intent);
+            } else if (type.equals("hr")) {
+
+                Intent intent = new Intent(Login.this, HrHomePage.class);
+                startActivity(intent);
+
+            } else if (type.equals("receptionist")) {
+
+                String receptionistFirstname = response.body().getLoginData().getFirstName();
+                String receptionistLastname = response.body().getLoginData().getLastName();
+                String receptionistdoctor = response.body().getLoginData().getSpecialist();
+                String receptionistgender=response.body().getLoginData().getGender();
+                SharedPreferences sharedPreferences = getSharedPreferences("RECEPTIONISTPREFS", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("REChomepagefirst", receptionistFirstname);
+                editor.putString("REChomepagelast", receptionistLastname);
+                editor.putString("REChomepagespecilaist", receptionistdoctor);
+                editor.putString("REChomepagegender", receptionistgender);
+                editor.apply();
+
+                Intent intent = new Intent(Login.this, Receptionist_homepage.class);
+                startActivity(intent);
+
+            } else if (type.equals("Analysis")) {
+                Intent intent = new Intent(Login.this, AnalysisEmployeeHomePage.class);
+                startActivity(intent);
+
+            } else if (type.equals("manger")) {
+                Intent intent = new Intent(Login.this, MangerHomePage.class);
+                startActivity(intent);
+
+            }else if(type.equals("")) {
+                Toast.makeText(Login.this, "no user found", Toast.LENGTH_SHORT).show();
+                return;
+
+            }
+
 
         }else {
             String messagebody=response.body().getMessage();
             Toast.makeText(Login.this, messagebody, Toast.LENGTH_LONG).show();
+            return;
         }
-    }
 
-}
+    }
+    }

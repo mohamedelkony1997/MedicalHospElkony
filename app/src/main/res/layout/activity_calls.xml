@@ -82,6 +82,7 @@
                     app:layout_constraintBottom_toBottomOf="parent  "
                     tools:listitem="@layout/call_items"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:orientation="vertical"
 
                     />
 

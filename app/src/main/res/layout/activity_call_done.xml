@@ -28,7 +28,7 @@
         android:id="@+id/done_text"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="The request has been canceled successfully"
+        android:text="The request has been created successfully"
         android:textSize="@dimen/_15ssp"
         android:textColor="@color/hblue"
         android:fontFamily="@font/poppins_medium"

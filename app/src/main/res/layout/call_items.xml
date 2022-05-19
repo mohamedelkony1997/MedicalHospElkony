@@ -34,6 +34,7 @@
         android:textSize="@dimen/_12ssp"
         android:text="Ebrahim Khaled"
         android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/imageprofile"
         app:layout_constraintTop_toTopOf="parent"
         />
@@ -63,6 +64,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/_12ssp"
         android:text="24/12/2021"
+        android:textColor="@color/black"
         android:layout_margin="@dimen/_5sdp"
         app:layout_constraintStart_toEndOf="@+id/imagecalender"
         app:layout_constraintTop_toBottomOf="@+id/imageprofile"

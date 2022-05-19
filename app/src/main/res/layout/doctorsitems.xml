@@ -17,17 +17,17 @@
         android:layout_height="@dimen/_40sdp"
         app:cardCornerRadius="8dp"
         android:elevation="10dp">
-    <ImageView
-        android:background="@color/white"
-        android:scaleType="fitXY"
-        android:id="@+id/profile_doctor_image"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
-        android:layout_margin="@dimen/_5sdp"
-  android:layout_gravity="center"
 
-    android:src="@drawable/mohamed"
-        />
+        <ImageView
+            android:id="@+id/profile_doctor_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+
+android:layout_gravity="center"
+            android:src="@drawable/mohamed" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -43,11 +43,12 @@
         android:id="@+id/doctor_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_12ssp"
+        android:textSize="@dimen/_13ssp"
         android:text="Dr. Ebrahim Khaled"
-        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintStart_toEndOf="@+id/Cardprofile_doctor_image"
         app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/poppins_semibold"
 
         />
 
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/_11ssp"
         android:text="Specialist - doctor"
-        android:layout_margin="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         app:layout_constraintStart_toEndOf="@+id/Cardprofile_doctor_image"
         app:layout_constraintTop_toBottomOf="@+id/doctor_name"
         android:gravity="center"

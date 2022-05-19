@@ -107,16 +107,6 @@ String[]items={"Male","female"};
         genderstr=gender.getText().toString();
         speciliststr=specilist.getText().toString();
         statusstr=status.getText().toString();
-        System.out.println(emailstr);
-        System.out.println(passwordstr);
-        System.out.println(firstNamestr);
-        System.out.println(lastnamestr);
-        System.out.println(genderstr);
-        System.out.println(speciliststr);
-        System.out.println(dataofbirthstr);
-        System.out.println(statusstr);
-        System.out.println(addressstr);
-        System.out.println(phonestr);
         RegisterRequest registerRequest=new RegisterRequest(emailstr,passwordstr,firstNamestr,lastnamestr,genderstr,speciliststr,dataofbirthstr,
                 statusstr,addressstr,phonestr,"doctor");
 

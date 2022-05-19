@@ -50,15 +50,15 @@
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_analysis_employee_home_page.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_attendence_and_leaving.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_call_done.xml" value="0.18" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_calls.xml" value="0.25" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_calls.xml" value="0.2" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_calls_doctors.xml" value="0.2" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_case_detials.xml" value="0.1" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_cases.xml" value="0.33" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_cases_detials_manger.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_cases_manger.xml" value="0.2" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_create_call.xml" value="0.18" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_create_call.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_create_reports.xml" value="0.25" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_doctor_home_page.xml" value="0.1" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_doctor_home_page.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_doctor_homepage.xml" value="0.14" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_employee.xml" value="0.25" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_hr_home_page.xml" value="0.33" />
@@ -73,14 +73,14 @@
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_profile.xml" value="0.5" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_proto_type.xml" value="0.1" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_receptionist_finger_print.xml" value="0.16" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_receptionist_homepage.xml" value="0.1" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_receptionist_homepage.xml" value="0.15" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_receptionist_leaving_finger_print.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_receptionistleaving_finger_print.xml" value="0.1" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_reports.xml" value="0.2" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_reports_details.xml" value="0.12" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_requests.xml" value="0.16" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_requests_details.xml" value="0.12" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_select_doctor.xml" value="0.22" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_select_doctor.xml" value="0.21" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_select_nurse.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_show_measurmentrecord.xml" value="0.1" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/activity_show_medical_record.xml" value="0.1" />
@@ -93,7 +93,7 @@
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/cases_items.xml" value="0.22" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/cases_itemsmanger.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/doctorscall_items.xml" value="0.1" />
-        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/doctorsitems.xml" value="0.17" />
+        <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/doctorsitems.xml" value="0.67" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/employeeitems.xml" value="0.1" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/fragment_case.xml" value="0.12" />
         <entry key="..\:/Users/RAM/AndroidStudioProjects/Hosp/app/src/main/res/layout/fragment_case_manger.xml" value="0.22" />

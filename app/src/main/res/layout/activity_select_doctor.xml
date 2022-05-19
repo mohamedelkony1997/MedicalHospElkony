@@ -28,8 +28,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_doctor_text"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
         android:hint="Serach for doctors"
@@ -51,18 +51,19 @@
         app:layout_constraintHeight_percent=".65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_inputlayout"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_marginStart="@dimen/_20sdp"
+
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
         tools:listitem="@layout/doctorsitems"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/selectdoctor"
         />
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/add"
+        android:id="@+id/selectdoctor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_15sdp"
+android:onClick="backtothehome"
         android:layout_marginEnd="@dimen/_20sdp"
         android:backgroundTint="@color/hblue"
         android:fontFamily="@font/fonts"
@@ -75,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recycler_doctor"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:onClick="selectdoctor_btn"/>
+     />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
