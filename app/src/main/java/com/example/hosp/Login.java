@@ -96,6 +96,7 @@ TextInputEditText email,password;
             Toast.makeText(this, "it is exists", Toast.LENGTH_SHORT).show();
             type = response.body().getLoginData().getType();
 
+
             if (type.equals("doctor")) {
                 String doctorFirstname = response.body().getLoginData().getFirstName();
                 String doctorLastname = response.body().getLoginData().getLastName();
@@ -122,12 +123,22 @@ TextInputEditText email,password;
                 String receptionistLastname = response.body().getLoginData().getLastName();
                 String receptionistdoctor = response.body().getLoginData().getSpecialist();
                 String receptionistgender=response.body().getLoginData().getGender();
+                String birth=response.body().getLoginData().getBirthday();
+                String address=response.body().getLoginData().getAddress();
+                String status=response.body().getLoginData().getStatus();
+                String email=response.body().getLoginData().getEmail();
+                String phone=response.body().getLoginData().getMobile();
                 SharedPreferences sharedPreferences = getSharedPreferences("RECEPTIONISTPREFS", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("REChomepagefirst", receptionistFirstname);
                 editor.putString("REChomepagelast", receptionistLastname);
                 editor.putString("REChomepagespecilaist", receptionistdoctor);
                 editor.putString("REChomepagegender", receptionistgender);
+                editor.putString("REChomepagebirth", birth);
+                editor.putString("REChomepageaddress", address);
+                editor.putString("REChomepagestatus", status);
+                editor.putString("REChomepageemail", email);
+                editor.putString("REChomepagephone", phone);
                 editor.apply();
 
                 Intent intent = new Intent(Login.this, Receptionist_homepage.class);

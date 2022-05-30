@@ -172,7 +172,7 @@ public class RegisterData {
 	@Override
  	public String toString(){
 		return 
-			"Data{" + 
+			"ShowCallData{" +
 			"birthday = '" + birthday + '\'' + 
 			",address = '" + address + '\'' + 
 			",gender = '" + gender + '\'' + 

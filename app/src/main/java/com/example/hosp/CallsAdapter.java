@@ -58,6 +58,16 @@ public class CallsAdapter extends RecyclerView.Adapter<CallsAdapter.viewholder> 
         }else{
             holder.callsstatus.setImageResource(R.drawable.checkbox_mark);
         }
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(v.getContext(),casesdetails_rec.class);
+
+                intent.putExtra("callid",callsClass.getId()+"");
+                ;
+                v.getContext().startActivity(intent);
+            }
+        });
 
     }
 

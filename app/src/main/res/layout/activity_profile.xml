@@ -15,7 +15,7 @@
         android:gravity="center"
         android:text="My Profile"
         android:textColor="@color/white"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_22ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         app:cardCornerRadius="@dimen/_30sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".65"
+        app:layout_constraintHeight_percent=".70"
 
         app:layout_constraintStart_toStartOf="parent"
 
@@ -70,7 +70,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="Specislist - Doctor"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
         android:gravity="center"
         android:drawablePadding="@dimen/_10sdp"
 android:drawableStart="@drawable/specialistprofile"
@@ -83,7 +83,7 @@ android:drawableStart="@drawable/specialistprofile"
         android:fontFamily="@font/poppins_medium"
         android:text="Male"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
         android:gravity="center"
         android:layout_marginTop="@dimen/_15sdp"
         android:drawablePadding="@dimen/_10sdp"
@@ -97,7 +97,7 @@ android:drawableStart="@drawable/specialistprofile"
         android:fontFamily="@font/poppins_medium"
         android:text="1-9-1997"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
         android:gravity="center"
         android:layout_marginTop="@dimen/_15sdp"
         android:drawablePadding="@dimen/_10sdp"
@@ -116,11 +116,27 @@ android:drawableStart="@drawable/specialistprofile"
         android:gravity="center"
         android:text="Etay Elbroud"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
 
         />
+
     <TextView
         android:id="@+id/profilestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/single"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Single"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+
+        />
+
+    <TextView
+        android:id="@+id/profileemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
@@ -130,7 +146,7 @@ android:drawableStart="@drawable/specialistprofile"
         android:gravity="center"
         android:text="mohamedelkony@gmail.com"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_12ssp"
 
         />
     <TextView
@@ -144,7 +160,7 @@ android:drawableStart="@drawable/specialistprofile"
         android:gravity="center"
         android:text="01022930508"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
 
 
         />
